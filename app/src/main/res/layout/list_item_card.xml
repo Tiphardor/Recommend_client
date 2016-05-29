@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_card_frame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:descendantFocusability="beforeDescendants"><!-- 为突出卡片效果，需设置左右padding,上下通过listView的divider设置 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background_selector"
+        android:descendantFocusability="afterDescendants">
+
+        <ImageView
+            android:id="@+id/course_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/course"/>
+
+        <TextView
+            android:id="@+id/course_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/course_image"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="android应用开发指南"/>
+
+        <ImageView
+            android:id="@+id/credit_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/course_image"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/credit"/>
+
+        <TextView
+            android:id="@+id/credit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/credit_image"
+            android:layout_below="@+id/course_image"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:textSize="20dp"
+            android:text="3.0"/>
+
+        <ImageView
+            android:id="@+id/grade_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/credit_image"
+            android:layout_toRightOf="@+id/credit_text"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/grade" />
+
+        <TextView
+            android:id="@+id/grade_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/grade_image"
+            android:layout_alignTop="@+id/credit_text"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:text="100"/>
+    </RelativeLayout>
+</FrameLayout>

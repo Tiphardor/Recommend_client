@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Recommend_client</string>
+    <string name="drawopen">打开</string>
+    <string name="drawclose">关闭</string>
+</resources>

@@ -1,0 +1,39 @@
+<resources>
+
+    <style name="style_RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_weight">0.25</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/Indigo_colorPrimaryDark</item>
+        <item name="colorPrimary">@color/Indigo_colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!-- 溢出菜单图标颜色-->
+        <item name="colorControlNormal">@android:color/white</item>
+
+        <!-- 箭头 -->
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+
+        <!-- 菜单项点击selector-->
+        <item name="actionBarItemBackground">@drawable/abc_item_background_holo_dark</item>
+    </style>
+
+
+    <!-- 左边的箭头指示-->
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+</resources>
