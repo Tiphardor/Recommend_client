@@ -37,8 +37,7 @@
             android:layout_height="wrap_content"
             android:listSelector="@android:color/transparent"
             android:cacheColorHint="@android:color/transparent"
-            android:divider="@null"
-            android:dividerHeight="20dp">
+            android:divider="@null">
         </zju.edu.recommend.view.ListViewForScrollView>
 
         <LinearLayout
@@ -67,8 +66,7 @@
             android:layout_height="wrap_content"
             android:listSelector="@android:color/transparent"
             android:cacheColorHint="@android:color/transparent"
-            android:divider="@null"
-            android:dividerHeight="20dp">
+            android:divider="@null">
         </zju.edu.recommend.view.ListViewForScrollView>
 
         <View
